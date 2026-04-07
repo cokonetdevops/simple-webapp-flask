@@ -11,29 +11,31 @@ This is a simple web application using [Python Flask](http://flask.pocoo.org/).
    
 ## 1. Install all required dependencies
   
-  Python and its dependencies
+  Install Python and its dependencies
   ```bash
-  apt-get install -y python3 python3-setuptools python3-dev build-essential python3-pip default-libmysqlclient-dev
+  apt-get install -y python3 python3-pip python3-venv
   ```
+
+## 2. Create a virtual environment and activate it
+python3 -m venv myenv && source myenv/bin/activate
    
-## 2. Install and Configure Web Server
+## 4. Install and Configure Web Server
 
 Install Python Flask dependency
 ```bash
 pip3 install flask
-pip3 install flask-mysql
 ```
 
 - Copy `app.py` or download it from a source repository
 
-## 3. Start Web Server
+## 5. Start Web Server
 
 Start web server
 ```bash
 FLASK_APP=app.py flask run --host=0.0.0.0
 ```
 
-## 4. Test
+## 6. Test
 
 Open a browser and go to URL
 ```
