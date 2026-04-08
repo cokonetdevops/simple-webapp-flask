@@ -17,8 +17,11 @@ This is a simple web application using [Python Flask](http://flask.pocoo.org/).
   ```
 
 ## 2. Create a virtual environment and activate it
+
+```bash
 python3 -m venv myenv && source myenv/bin/activate
-   
+```
+
 ## 4. Install and Configure Web Server
 
 Install Python Flask dependency
